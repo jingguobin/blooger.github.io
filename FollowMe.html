@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人联系方式展示</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url('images/backgrounds/联系我背景.png'); /* 替换为你的背景图片链接 */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .header {
+            margin-bottom: 40px; /* 根据需要调整间距 */
+            font-size: 2.5em; /* 根据需要调整字体大小 */
+            color: white; /* 根据背景图片调整文字颜色以确保可读性 */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 可选：添加文字阴影以增强可读性 */
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* 半透明背景 */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .section {
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .section:hover {
+            transform: translateY(-10px);
+        }
+        .section img {
+            max-width: 200px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>我的联系方式</h1> <!-- 大标题 -->
+</div>
+<div class="container">
+    <div class="section">
+        <img src="images/blog/私人微信.jpg" alt="二维码1"> <!-- 替换为你的二维码链接 -->
+        <h2>WeChat</h2>
+        <p>More and More</p>
+    </div>
+    <div class="section">
+        <img src="images/blog/企业微信.jpg" alt="二维码2"> <!-- 替换为你的二维码链接 -->
+        <h2>WeCom</h2>
+        <p>这里可以添加一些描述文字，比如电话、LinkedIn等。</p>
+    </div>
+    <div class="section">
+        <img src="images/blog/私人微信.jpg" alt="二维码3"> <!-- 替换为你的二维码链接 -->
+        <h2>WeChat</h2>
+        <p>Follow Me</p>
+    </div>
+    <div class="section">
+        <img src="images/blog/post-01-350x315.jpg" alt="二维码4"> <!-- 替换为你的二维码链接 -->
+        <h2>联系方式4</h2>
+        <p>这里可以添加一些描述文字。</p>
+    </div>
+</div>
+</body>
+</html>
